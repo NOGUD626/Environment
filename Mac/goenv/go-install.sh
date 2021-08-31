@@ -26,11 +26,10 @@ if [ $SHELL = "/bin/zsh" ]; then
 FILE=$FILE"/.zshrc"
 echo 'export GOPATH=$HOME/go' >> $FILE
 echo 'PATH=$PATH:$GOPATH/bin' >> $FILE
-source ~/.zshrc
 else
 FILE=$FILE"/.bash_profile"
 echo 'export GOPATH=$HOME/go' >> $FILE
 echo 'PATH=$PATH:$GOPATH/bin' >> $FILE
-source ~/.bash_profile
 fi
 
+source $FILE
