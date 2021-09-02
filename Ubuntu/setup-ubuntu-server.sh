@@ -7,7 +7,7 @@ echo ${pass}  | sudo -S apt upgrade -y
 LC_ALL=C xdg-user-dirs-update --force
 
 # 日本語ディレクトリ名のものを消去
-ARRAY=("ドキュメント" "ミュージック" "ダウンロード" "デスクトップ" "ビデオ" "公開" "ピクチャ") 
+ARRAY=("ドキュメント" "ミュージック" "ダウンロード" "デスクトップ" "ビデオ" "公開" "ピクチャ" "テンプレート") 
 
 for item in ${ARRAY[@]}; do
     if [ -e $HOME"/"$item ]; then
